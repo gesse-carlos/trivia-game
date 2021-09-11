@@ -69,8 +69,7 @@ class Login extends React.Component {
 
   render() {
     const { username, gravatarEmail, disable, redirect } = this.state;
-    if (redirect) return <Redirect to="/game" />;
-
+    if (redirect) return <Redirect to="/trivia-game/game" />;
     return (
       <header className="App-header">
         <img src={ logo } className="App-logo" alt="logo" />
@@ -104,7 +103,11 @@ class Login extends React.Component {
             disabled={ disable }
             onClick={ this.handleClick }
           />
-          <Link to="/settings" data-testid="btn-settings" id="settings-button">
+          <Link
+            to="/trivia-game/settings"
+            data-testid="btn-settings"
+            id="settings-button"
+          >
             <Button
               className="btn btn-secondary settings-button"
               text={ <IoIosSettings className="settings-icon" /> }

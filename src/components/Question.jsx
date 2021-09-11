@@ -64,7 +64,7 @@ class Question extends React.Component {
     const { id } = this.state;
     const questionsLimit = 5;
     if (questions.length === 0) return <p>Loading...</p>;
-    if (id === questionsLimit) return <Redirect to="/feedback" />;
+    if (id === questionsLimit) return <Redirect to="/trivia-game/feedback" />;
     const questionMap = questions.map((question) => this.renderQuestions(question));
     return (
       questionMap[id]

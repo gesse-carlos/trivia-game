@@ -16,7 +16,7 @@ class Game extends React.Component {
 
   render() {
     const { redirect } = this.state;
-    if (redirect) return <Redirect to="/feedback" />;
+    if (redirect) return <Redirect to="/trivia-game/feedback" />;
 
     return (
       <div className="game-page">

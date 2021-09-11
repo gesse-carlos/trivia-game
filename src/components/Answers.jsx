@@ -92,8 +92,8 @@ class Answers extends React.Component {
   disableButtom() {
     this.setState({
       disable: true,
-      correctColor: 'correctAnswer',
-      wrongColor: 'wrongAnswer',
+      correctColor: 'btn btn-success',
+      wrongColor: 'btn btn-danger',
     });
   }
 

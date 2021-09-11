@@ -1,5 +1,6 @@
 {
   "name": "trivia-test",
+  "homepage": "/trivia-game",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

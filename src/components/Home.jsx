@@ -6,7 +6,7 @@ import Button from './Button';
 export default class Home extends React.Component {
   render() {
     return (
-      <Link to="/">
+      <Link to="/trivia-game">
         <Button
           category="button"
           id="go-home"

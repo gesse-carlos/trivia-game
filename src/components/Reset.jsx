@@ -26,7 +26,7 @@ export default class Reset extends React.Component {
 
   render() {
     const { redirect } = this.state;
-    if (redirect) return <Redirect to="/" />;
+    if (redirect) return <Redirect to="/trivia-game" />;
 
     return (
       <Button
