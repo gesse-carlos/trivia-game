@@ -3,7 +3,7 @@ import React from 'react';
 import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { IoIosSettings } from 'react-icons/io';
+// import { IoIosSettings } from 'react-icons/io';
 import { BsFillPlayFill } from 'react-icons/bs';
 import fetchActions from '../redux/actions/fetchActions';
 
@@ -108,10 +108,10 @@ class Login extends React.Component {
             data-testid="btn-settings"
             id="settings-button"
           >
-            <Button
+            {/* <Button
               className="btn btn-secondary settings-button"
               text={ <IoIosSettings className="settings-icon" /> }
-            />
+            /> */}
           </Link>
         </form>
       </header>
